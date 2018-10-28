@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 95940035280290816}
   - component: {fileID: 54994909246857716}
   - component: {fileID: 65723655929554520}
+  - component: {fileID: 114984651160488104}
   m_Layer: 0
   m_Name: Mannequin_Tim_Walk_002
   m_TagString: Untagged
@@ -726,6 +727,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114984651160488104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997116701781756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00342351f6ee64ee2998860021a092ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expiryTimer: 8
 --- !u!137 &137550270148513322
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

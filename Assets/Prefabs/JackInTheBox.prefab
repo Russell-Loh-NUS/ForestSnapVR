@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4882842017435656}
   - component: {fileID: 54415356858323034}
   - component: {fileID: 65262267582651520}
+  - component: {fileID: 114172461730195110}
   m_Layer: 0
   m_Name: JackInTheBox
   m_TagString: Untagged
@@ -141,3 +142,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6, y: 9, z: 7}
   m_Center: {x: 0, y: 3.5, z: 1}
+--- !u!114 &114172461730195110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1665276649498316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00342351f6ee64ee2998860021a092ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expiryTimer: 8

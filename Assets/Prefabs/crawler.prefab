@@ -413,6 +413,7 @@ GameObject:
   - component: {fileID: 54127017521405210}
   - component: {fileID: 65044508416149688}
   - component: {fileID: 114488415148819622}
+  - component: {fileID: 114503103754166552}
   m_Layer: 0
   m_Name: crawler
   m_TagString: Untagged
@@ -1727,6 +1728,18 @@ MonoBehaviour:
   moveX: -2
   moveY: 0
   moveZ: 0
+--- !u!114 &114503103754166552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1624218874199488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00342351f6ee64ee2998860021a092ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expiryTimer: 8
 --- !u!137 &137071529752104080
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
