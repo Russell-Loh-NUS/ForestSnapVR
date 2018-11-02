@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MonsterGenerator : MonoBehaviour {
+public class GameController : MonoBehaviour {
 
     public GameObject[] dynamicMonsters;
     public GameObject[] staticMonsters;
     public GameObject[] dynamicSpawn;
     public GameObject[] staticSpawn;
     public float spawnInterval = 3.0f;
+
+    public int score;
+    public Text scoreText;
 
     float timer;
 	// Use this for initialization
@@ -37,4 +41,13 @@ public class MonsterGenerator : MonoBehaviour {
         }
         timer -= Time.deltaTime;
 	}
+
+    public void AddScore(int newScoreValue) {
+        score += newScoreValue;
+        UpdateScore();
+    }
+
+    void UpdateScore() {
+        scoreText.text = "Score: " + score;
+    }
 }

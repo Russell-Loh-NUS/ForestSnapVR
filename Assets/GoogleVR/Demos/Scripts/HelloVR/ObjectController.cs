@@ -24,10 +24,22 @@ namespace GoogleVR.HelloVR {
     public Material inactiveMaterial;
     public Material gazedAtMaterial;
 
+    public int ScoreValue;
+    private GameController gameController;
+
     void Start() {
       startingPosition = transform.localPosition;
       myRenderer = GetComponent<Renderer>();
       SetGazedAt(false);
+            //when instantiated, find the GameController object in scene so then it can do its job
+            GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+            if (gameControllerObject != null)
+            {
+                gameController = gameControllerObject.GetComponent <GameController>();
+            }
+            else {
+                Debug.Log("Cannot find GameController script");
+            }
     }
 
     public void SetGazedAt(bool gazedAt) {
@@ -55,6 +67,12 @@ namespace GoogleVR.HelloVR {
         GvrEditorEmulator.Instance.Recenter();
       }
 #endif  // !UNITY_EDITOR
+    }
+
+    // PhotoTaken function to add score and destroy object when done
+    public void PhotoTaken(BaseEventData eventData) {
+            gameController.AddScore(ScoreValue);
+            Destroy(gameObject);
     }
 
     public void TeleportRandomly(BaseEventData eventData) {
