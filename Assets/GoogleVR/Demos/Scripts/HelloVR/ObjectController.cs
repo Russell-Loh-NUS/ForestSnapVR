@@ -71,6 +71,7 @@ namespace GoogleVR.HelloVR {
 
     // PhotoTaken function to add score and destroy object when done
     public void PhotoTaken(BaseEventData eventData) {
+
             gameController.AddScore(ScoreValue);
             Destroy(gameObject);
     }

@@ -14,10 +14,18 @@ public class GameController : MonoBehaviour {
     public int score;
     public Text scoreText;
 
+    public AudioClip soundEffect;
+    public AudioClip background;
+    public AudioSource soundSource;
+    public AudioSource bgSource;
+
     float timer;
 	// Use this for initialization
 	void Start () {
         timer = spawnInterval;
+        soundSource.clip = soundEffect;
+        bgSource.clip = background;
+        bgSource.Play();
 	}
 	
 	// Update is called once per frame
@@ -43,6 +51,7 @@ public class GameController : MonoBehaviour {
 	}
 
     public void AddScore(int newScoreValue) {
+        soundSource.Play();
         score += newScoreValue;
         UpdateScore();
     }
