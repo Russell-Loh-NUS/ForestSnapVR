@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4699900507549906}
   - component: {fileID: 33506819174191850}
   - component: {fileID: 23927380110117538}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114172461730195110}
   - component: {fileID: 114378224604513520}
   - component: {fileID: 114895573622190886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: JackInTheBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
