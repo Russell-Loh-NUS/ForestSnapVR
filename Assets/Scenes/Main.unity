@@ -1899,6 +1899,11 @@ Prefab:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 1968058561}
+    - target: {fileID: 114934090782591928, guid: dba903679effdcb4c958792ce37c9cdf,
+        type: 2}
+      propertyPath: gameTime
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba903679effdcb4c958792ce37c9cdf, type: 2}
   m_IsPrefabAsset: 0
@@ -2137,7 +2142,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.4, y: 0}
-  m_SizeDelta: {x: 500, y: 250}
+  m_SizeDelta: {x: 450, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421879961
 MonoBehaviour:
@@ -2205,7 +2210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -208.2, y: 120.2}
+  m_AnchoredPosition: {x: -186, y: 120.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427096548
@@ -3037,7 +3042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 208.4, y: 130.6}
+  m_AnchoredPosition: {x: 187, y: 130.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1968058560
@@ -3079,7 +3084,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time: 30'
+  m_Text: 'Time: 60'
 --- !u!1001 &1978044029
 Prefab:
   m_ObjectHideFlags: 0
