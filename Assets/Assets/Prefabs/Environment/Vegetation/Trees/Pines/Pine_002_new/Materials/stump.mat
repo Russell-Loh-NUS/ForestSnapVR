@@ -553,7 +553,7 @@ Material:
     - _FullDetailNormalBlendThreshold: 1
     - _FullDetailNormalBlendWidth: 0.05
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.147
     - _GlossyReflections: 1
     - _HdrpVersion: 1
     - _HeightAmplitude: 0.099999994

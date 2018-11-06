@@ -362,7 +362,7 @@ Material:
     - _EnableWind: 0
     - _EnergyConservingSpecularColor: 1
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.14
     - _GlossyReflections: 1
     - _HdrpVersion: 1
     - _HeightAmplitude: 0.07

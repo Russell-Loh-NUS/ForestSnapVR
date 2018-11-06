@@ -367,7 +367,7 @@ Material:
     - _EnergyConservingSpecularColor: 1
     - _FullDetailNormalBlendThreshold: 1
     - _FullDetailNormalBlendWidth: 0.05
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0.178
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _HdrpVersion: 1
