@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour {
 
     public int score;
     public Text scoreText;
+    public Text timerText;
 
     public AudioClip soundEffect;
     public AudioClip background;
@@ -20,8 +21,12 @@ public class GameController : MonoBehaviour {
     public AudioSource bgSource;
 
     float timer;
+
+    public int gameTime = 30;
+
 	// Use this for initialization
 	void Start () {
+        StartCoroutine("LoseTime");
         timer = spawnInterval;
         soundSource.clip = soundEffect;
         bgSource.clip = background;
@@ -30,6 +35,11 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        timerText.text = "Time: " + gameTime;
+        if (gameTime <= 0) {
+            StopCoroutine("LoseTime");
+        }
+
         if(timer <= 0){
             GameObject monster;
             Vector3 spawnPos;
@@ -58,5 +68,12 @@ public class GameController : MonoBehaviour {
 
     void UpdateScore() {
         scoreText.text = "Score: " + score;
+    }
+
+    IEnumerator LoseTime() {
+        while (true) {
+            yield return new WaitForSeconds(1);
+            gameTime--;
+        }
     }
 }
