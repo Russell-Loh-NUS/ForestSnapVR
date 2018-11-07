@@ -2131,7 +2131,7 @@ Prefab:
     - target: {fileID: 114934090782591928, guid: dba903679effdcb4c958792ce37c9cdf,
         type: 2}
       propertyPath: gameTime
-      value: 10
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 114934090782591928, guid: dba903679effdcb4c958792ce37c9cdf,
         type: 2}
