@@ -69,5 +69,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   spawnInterval: 2
+  shouldSpawn: 0
   score: 0
   scoreText: {fileID: 0}
+  timerText: {fileID: 0}
+  soundEffect: {fileID: 0}
+  background: {fileID: 0}
+  soundSource: {fileID: 0}
+  bgSource: {fileID: 0}
+  gameTime: 30
