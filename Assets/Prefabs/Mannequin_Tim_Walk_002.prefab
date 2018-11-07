@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 114019305102574296}
   m_Layer: 9
   m_Name: Mannequin_Tim_Walk_002
-  m_TagString: Untagged
+  m_TagString: Creatures
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

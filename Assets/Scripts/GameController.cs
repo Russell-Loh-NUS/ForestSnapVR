@@ -14,9 +14,11 @@ public class GameController : MonoBehaviour {
 
     public int score;
     public Text scoreText;
+    public Text endScoreText;
     public Text timerText;
     public GameObject startPanel;
     public GameObject endPanel;
+    public GameObject gamePanel;
 
     public AudioClip soundEffect;
     public AudioClip background;
@@ -27,6 +29,8 @@ public class GameController : MonoBehaviour {
 
     public int gameTime = 30;
     int initialGameTime = 0;
+
+    GameObject[] creatures;
 
 	// Use this for initialization
 	void Start () {
@@ -44,8 +48,10 @@ public class GameController : MonoBehaviour {
             timerText.text = "Time: " + gameTime;
             if (gameTime <= 0)
             {
-                stopSpawn();
                 StopCoroutine("LoseTime");
+                stopSpawn();
+                endScoreText.text = "Your Score: " + score;
+                gamePanel.SetActive(false);
             }
 
             if (timer <= 0)
@@ -74,6 +80,7 @@ public class GameController : MonoBehaviour {
             //END GAME
             if (Input.GetMouseButtonDown(0))
             {
+                gamePanel.SetActive(true);
                 startSpawn();
             }
         }
@@ -81,6 +88,7 @@ public class GameController : MonoBehaviour {
             //START GAME
             if (Input.GetMouseButtonDown(0))
             {
+                gamePanel.SetActive(true);
                 startSpawn();
             }
         }
@@ -98,6 +106,8 @@ public class GameController : MonoBehaviour {
 
     void startSpawn()
     {
+        score = 0;
+        scoreText.text = "Score: " + score;
         timer = spawnInterval;
         gameTime = initialGameTime;
         startPanel.SetActive(false);
@@ -110,8 +120,13 @@ public class GameController : MonoBehaviour {
     {
         endPanel.SetActive(true);
         gameState = 2;
+        creatures = GameObject.FindGameObjectsWithTag("Creatures");
+        foreach (GameObject creature in creatures) {
+            Destroy(creature);
+        }
     }
 
+    //countdown timer
     IEnumerator LoseTime() {
         while (true) {
             yield return new WaitForSeconds(1);

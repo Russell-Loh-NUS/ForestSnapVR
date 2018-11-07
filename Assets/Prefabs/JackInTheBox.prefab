@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114895573622190886}
   m_Layer: 9
   m_Name: JackInTheBox
-  m_TagString: Untagged
+  m_TagString: Creatures
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

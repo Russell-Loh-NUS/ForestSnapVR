@@ -2131,7 +2131,7 @@ Prefab:
     - target: {fileID: 114934090782591928, guid: dba903679effdcb4c958792ce37c9cdf,
         type: 2}
       propertyPath: gameTime
-      value: 60
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114934090782591928, guid: dba903679effdcb4c958792ce37c9cdf,
         type: 2}
@@ -2143,6 +2143,16 @@ Prefab:
       propertyPath: endPanel
       value: 
       objectReference: {fileID: 1422789253}
+    - target: {fileID: 114934090782591928, guid: dba903679effdcb4c958792ce37c9cdf,
+        type: 2}
+      propertyPath: gamePanel
+      value: 
+      objectReference: {fileID: 1889674351}
+    - target: {fileID: 114934090782591928, guid: dba903679effdcb4c958792ce37c9cdf,
+        type: 2}
+      propertyPath: endScoreText
+      value: 
+      objectReference: {fileID: 105415666}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba903679effdcb4c958792ce37c9cdf, type: 2}
   m_IsPrefabAsset: 0
@@ -3207,7 +3217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1889674352
 RectTransform:
   m_ObjectHideFlags: 0
