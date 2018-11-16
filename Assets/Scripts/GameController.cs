@@ -45,6 +45,9 @@ public class GameController : MonoBehaviour {
 	void Update () {
         if (gameState == 1)
         {
+            if (Input.GetMouseButtonDown(0)) {
+                soundSource.Play();
+            }
             timerText.text = "Time: " + gameTime;
             if (gameTime <= 0)
             {
@@ -95,7 +98,6 @@ public class GameController : MonoBehaviour {
 	}
 
     public void AddScore(int newScoreValue) {
-        soundSource.Play();
         score += newScoreValue;
         UpdateScore();
     }
